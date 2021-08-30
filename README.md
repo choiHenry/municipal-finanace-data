@@ -1,4 +1,4 @@
-# Municipal Finanace Data
+# Municipal Finance Data
 This repository contains web scraper for municipal finance data.
 
 # How to use
