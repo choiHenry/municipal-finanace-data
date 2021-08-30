@@ -19,10 +19,17 @@ def download(url, file_name):
                 response = requests.get(url)
                 file.write(response.content)
                 break
+                
             except requests.exceptions.ConnectionError:
                 seconds += 1
                 print(f"Connection refused. Try download for each second. Passed {seconds} seconds.")
                 sleep(1)
+                
+            except requests.exceptions.ChunkedEncodingError:
+                seconds += 1
+                print(f"Server error occurred. Try download for each second. Passed {seconds} seconds.")
+                sleep(1) 
+               
             finally:   
                 if seconds > 20:
                     raise ConnectionError("Connection refused over 20 seconds. Shutting down the program...")
