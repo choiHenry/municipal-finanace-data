@@ -5,7 +5,7 @@ This repository contains web scraper for municipal finance data.
 
 ## Prerequisites
 1. Visual Studio Code: [download Visual Studio Code](https://code.visualstudio.com/download) and install it.
-2. Anaconda: [download anaconda] and install it.
+2. Anaconda: [download anaconda](https://www.anaconda.com/products/individual-d) and install it.
 3. Download this repo
 
 ## Init conda env and install requirements
